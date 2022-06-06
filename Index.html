@@ -8,9 +8,22 @@
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="/style.css">
     <title>Document</title>
+    <!--Comentarios generales sobre tailwind
+        el margen se define "m-xx"
+        padding "p-xx"
+
+        mt = arriba
+        ml = izq
+        mr = derecha
+        mb = abajo
+
+        igual para el pad
+    
+    -->
 </head>
 
 <body>
+    <!-- Nav bar-->
     <nav class="grid grid-cols-12 items-center bg-white-500 p-6">
         <div class="col-span-2 justify-start items-center flex-shrink-0 text-white mr-6">
             <img src="imagenes\logo.png" width="200px">
@@ -44,6 +57,7 @@
         </div>
     </nav>
     <hr>
+    <!--Primera Seccion Portada-->
     <div class="grid grid-cols-2">
         <div class="col-span-1 justify-center items-center">
             <h2 class="text-4xl ml-24 mt-32 text-blue-800 font-extrabold">Adquiere</h2>
@@ -55,6 +69,7 @@
         </div>
     </div>
     <hr>
+    <!--Seccion de categorias-->
     <div class="flex justify-center bg-gray-400">
         <div class="container mx-auto bg-gray-400">
             <div class="justify-center items-center bg-gray-400 ">
@@ -78,12 +93,14 @@
         </div>
     </div>
     <hr>
+    <!--Banner Intermedio-->
     <div class="grid grid-cols-12 items-center justify-center">
         <div class="col-span-12 h-64 bg-blue-500 rounded-lg m-10">
             <img class="mx-auto items-center" src="imagenes\image.png" width="350px">
         </div>
     </div>
     <hr>
+    <!--Garantias-->
     <div class="justify-center items-center bg-gray-400">
         <div class="grid grid-cols-5 justify-center items-center">
             <div class="bg-gray-400 h-64 rounded col-span-3">
@@ -99,6 +116,7 @@
         </div>
     </div>
     <hr>
+    <!--certificaciones-->
     <div class="justify-center items-center bg-white ">
         <div>
             <p class="text-2xl text-blue-700 text-center mt-10 ">Certificaciones</p>
@@ -118,6 +136,7 @@
         </div>
     </div>
     <hr>
+    <!--Categoria y Video-->
     <div class="justify-center items-center bg-gray-400 ">
         <div class="grid grid-cols-3 justify-center items-center ">
             <div class="bg-gray-400 h-64 rounded col-span-2">
@@ -132,8 +151,11 @@
         </div>
     </div>
     <hr>
+    <!--Productos-->
     <div id="productos">
+        <!--grid es la rejilla, el grid cols es las columnas, col span es el tamaño asignado a cada div-->
         <div class="grid grid-cols-3 mt-10 mb-10">
+            <!--div de la tarjeta-->
             <div class="StoreItemCart col-span-1 bg-blue-500 mx-auto h-64 w-32 m-5 rounded-lg ">
                 <div class="ImageTam bg-white mt-10 m-2 mx-auto rounded-lg">
                     <img class="ImageTam rounded-lg" src="imagenes/image.png" alt="">
@@ -148,6 +170,7 @@
                     Carrito
                 </button>
             </div>
+            <!--div de la tarjeta-->
             <div class="StoreItemCart col-span-1 bg-blue-500 mx-auto h-64 w-32 m-5 rounded-lg ">
                 <div class="ImageTam bg-white mt-10 m-2 mx-auto rounded-lg">
                     <img class="ImageTam rounded-lg" src="imagenes/image.png" alt="">
@@ -162,6 +185,7 @@
                     Carrito
                 </button>
             </div>
+            <!--div de la tarjeta-->
             <div class="StoreItemCart col-span-1 bg-blue-500 mx-auto h-64 w-32 m-5 rounded-lg ">
                 <div class="ImageTam bg-white mt-10 m-2 mx-auto rounded-lg">
                     <img class="ImageTam rounded-lg" src="imagenes/image.png" alt="">
@@ -179,12 +203,13 @@
         </div>
     </div>
     <hr>
+    <!--Footer-->
     <footer class="bg-white justify-start items-center ">
         <div class="items-center m-12 ">
             <img src="imagenes\logo.png " width="300px ">
         </div>
     </footer>
-
+    <!--scripts-->
     <script src=" app.js "></script>
     <script src="store.js"></script>
 
