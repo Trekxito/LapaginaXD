@@ -56,26 +56,26 @@ function updateStoreProducts() {
     const mid_wrapper = document.createElement('div');
     wrapper.innerHTML = '';
     mid_wrapper.id = 'products';
-    mid_wrapper.className = ('grid grid-cols-3 mt-10 mb-10');
+    mid_wrapper.className = ('grid grid-cols-3 bg-indigo-800');
     category_items.forEach(product => {
         const new_product = document.createElement('div');
-        new_product.className = ('StoreItemCart col-span-1 bg-blue-500 mx-auto h-64 w-32 m-5 rounded-lg');
-        new_product.innerHTML = `<div class="ImageTam bg-white mt-10 m-2 mx-auto rounded-lg">
+        new_product.className = ('StoreItemCart col-span-1 bg-white mx-auto h-64 w-32 m-5 rounded-lg mt-10 mb-10');
+        new_product.innerHTML = `<div class="ImageTam bg-white mt-10 m-2 mx-auto rounded-lg border-8">
                                     <img class="ImageTam rounded-lg" src="${product.thumbnailUrl}" alt="">
                                 </div>
-                                <p class="ml-10 mt-4 mr-2 text-white">
+                                <p class="ml-10 mt-4 mr-2 text-blue-800">
                                     ${product.name}
                                 </p>
-                                <ul class="list-disc ml-16 mt-5 text-white">
+                                <ul class="list-disc ml-16 mt-5  text-blue-800">
                                     <li>Lorem Ipsum</li>
                                     <li>Lorem Ipsum</li>
                                     <li>Lorem Ipsum</li>
                                 </ul>
                                 <br>
-                                <div class="mt-2 text-white ml-12">
+                                <div class="mt-2  text-blue-800 ml-12">
                                     ${price_formatter.format(product.price)}      
                                 </div>
-                                <button class="ml-10 mb-4 mt-4 bg-white text-blue-700 font-bold py-2 px-4 rounded">
+                                <button class="ml-10 mb-4 mt-4 bg-green-500 text-white font-bold py-2 px-4 rounded">
                                     Carrito
                                 </button>
             `;

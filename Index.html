@@ -74,19 +74,25 @@
         <div class="container mx-auto bg-gray-400">
             <div class="justify-center items-center bg-gray-400 ">
                 <div class="grid grid-cols-3 justify-center items-center ">
-                    <div class="col-span-1 bg-white m-10 h-64 w-64 rounded-lg mx-auto"></div>
-                    <div class="col-span-1 bg-white m-10 h-64 w-64 rounded-lg mx-auto"></div>
-                    <div class="col-span-1 bg-white m-10 h-64 w-64 rounded-lg mx-auto"></div>
+                    <div class="col-span-1 bg-white m-10 h-64 w-64 rounded-full mx-auto">
+                        <img class="object-cover" src="imagenes/agua1.png" alt="">
+                    </div>
+                    <div class="col-span-1 bg-white m-10 h-64 w-64 rounded-full mx-auto">
+                        <img class="object-cover" src="imagenes/agua2.png" alt="">
+                    </div>
+                    <div class="col-span-1 bg-white m-10 h-64 w-64 rounded-full mx-auto">
+                        <img class="object-cover" src="imagenes/agua3.png" alt="">
+                    </div>
                 </div>
                 <div class="flex justify-center items-center ">
                     <div class="basis-1/3 flex-auto ">
-                        <p class="text-center mb-5 ">Lorem Ipsum</p>
+                        <p class="text-center font-bold text-blue-800 mb-5 ">Incrustaciones</p>
                     </div>
                     <div class="basis-1/3 flex-auto ">
-                        <p class="text-center mb-5 ">Lorem Ipsum</p>
+                        <p class="text-center font-bold text-blue-800 mb-5 ">Purificacion</p>
                     </div>
                     <div class="basis-1/3 flex-auto ">
-                        <p class="text-center mb-5 ">Lorem Ipsum</p>
+                        <p class="text-center font-bold text-blue-800 mb-5 ">Ahorro de agua</p>
                     </div>
                 </div>
             </div>
@@ -97,42 +103,6 @@
     <div class="grid grid-cols-12 items-center justify-center">
         <div class="col-span-12 h-64 bg-blue-500 rounded-lg m-10">
             <img class="mx-auto items-center" src="imagenes\image.png" width="350px">
-        </div>
-    </div>
-    <hr>
-    <!--Garantias-->
-    <div class="justify-center items-center bg-gray-400">
-        <div class="grid grid-cols-5 justify-center items-center">
-            <div class="bg-gray-400 h-64 rounded col-span-3">
-                <p class="text-2xl text-blue-900 font-bold ml-32 mt-10">Garantias</p>
-                <br>
-                <p class="text-blue-500 text font-bold ml-32">Lorem Ipsum is simply dummy text of the printing and
-                    <br>typesetting industry. Lorem Ipsum has been the industry 's
-                    <br>standard dummy text ever since the 1500s, </p>
-            </div>
-            <div class="bg-white mx-auto w-48 h-48 rounded-lg col-span-2">
-                <img class="mx-auto mt-5" src=" imagenes\image.png ">
-            </div>
-        </div>
-    </div>
-    <hr>
-    <!--certificaciones-->
-    <div class="justify-center items-center bg-white ">
-        <div>
-            <p class="text-2xl text-blue-700 text-center mt-10 ">Certificaciones</p>
-        </div>
-        <br>
-        <br>
-        <div class="grid grid-cols-3 justify-center items-center ">
-            <div class="col-span-1 bg-blue-800 h-48 w-48 mx-auto mb-10 rounded-full ">
-                <img src="imagenes/marti.png" class="h-40 object-cover rounded-lg">
-            </div>
-            <div class="col-span-1 bg-blue-800  h-48 w-48 mx-auto mb-10 rounded-full ">
-                <img src="imagenes/marti.png" class="h-40 object-cover rounded-lg">
-            </div>
-            <div class="col-span-1 bg-blue-800 h-48 w-48 mx-auto mb-10 rounded-full ">
-                <img src="imagenes/marti.png" class="h-40 object-cover rounded-lg">
-            </div>
         </div>
     </div>
     <hr>
@@ -152,9 +122,9 @@
     </div>
     <hr>
     <!--Productos-->
-    <div id="productos">
+    <div id="productos" class="bg-blue-300">
         <!--grid es la rejilla, el grid cols es las columnas, col span es el tamaño asignado a cada div-->
-        <div class="grid grid-cols-3 mt-10 mb-10">
+        <div class="grid grid-cols-3 mt-10 mb-10 bg-blue-300">
             <!--div de la tarjeta - aqui utilizo clases del archivo css-->
             <div class="StoreItemCart col-span-1 bg-blue-500 mx-auto h-64 w-32 m-5 rounded-lg ">
                 <div class="ImageTam bg-white mt-10 m-2 mx-auto rounded-lg">
@@ -199,6 +169,21 @@
                 <button class="ml-10 mt-10 bg-white text-blue-700 font-bold py-2 px-4 rounded">
                     Carrito
             </button>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--certificaciones-->
+    <div class="bg-white">
+        <div class="grid grid-cols-3 justify-center items-center ">
+            <div class="col-span-1">
+                <img style="height: 60vh; width:30vw;" src="imagenes/cel.png" class="h-40 object-cover rounded-lg">
+            </div>
+            <div class="col-span-2 mx-auto">
+                <h2 class="text-4xl ml-24 text-blue-600 font-extrabold">!Conoce mas acerca de</h2>
+                <h2 class="text-4xl ml-24 text-blue-600 font-extrabold">nuestros productos¡</h2>
+                <h3 class="text-2xl ml-24 text-blue-600 font-bold">Descarga
+                    <a href="#" class="underline text-teal-600">aqui</a> nuestro catalogo</h3>
             </div>
         </div>
     </div>
